@@ -1,0 +1,472 @@
+@import "./variables";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "/node_modules/@fortawesome/fontawesome-free/css/all.css";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+*,
+html {
+    .active {
+        color: $success;
+    }
+}
+
+.intro {
+    background-image: url(../styles/ladyimage.png);
+    background-size: cover;
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+    .blur {
+        background: rgba(0, 52, 18, 0.35);
+        backdrop-filter: blur(33px);
+        width: 100%;
+        position: absolute;
+        height: 4.5rem;
+        position: absolute;
+        bottom: 0;
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+    .texts {
+        .text-1 {
+            font-size: 3em;
+            padding-top: 3rem;
+            color: $success;
+            @media screen and (max-width: 768px) {
+                font-size: 1.5em;
+                text-align: center;
+            }
+        }
+        .text-2 {
+            color: $tertiary;
+            @media screen and (max-width: 768px) {
+                text-align: center;
+            }
+        }
+        .text-3 {
+            color: $tertiary;
+            @media screen and (max-width: 768px) {
+                text-align: center;
+            }
+        }
+    }
+    .btn-controller {
+        @media screen and (max-width: 768px) {
+            justify-content: center;
+        }
+        .btn-sign {
+            background-color: $success;
+            border: none;
+        }
+        .btn-learn {
+            background-color: $secondary;
+            color: $tertiary;
+            border: none;
+        }
+    }
+}
+
+.learning {
+    gap: 3rem;
+    .girl {
+        margin-top: 4rem;
+        flex: 1;
+        img {
+            width: 75%;
+            display: block;
+            margin: 0 auto;
+            object-fit: cover;
+        }
+    }
+    .contents {
+        margin-top: 4rem;
+        flex: 1;
+        .content-1 {
+            font-size: 1.5em;
+            color: $success;
+            @media screen and (max-width: 768px) {
+                text-align: center;
+            }
+        }
+        .content-2 {
+            color: $tertiary;
+            @media screen and (max-width: 768px) {
+                text-align: center;
+            }
+        }
+    }
+    .numbers {
+        .num-1 {
+            font-size: 2.5rem;
+            color: $success;
+            @media screen and (max-width: 768px) {
+                font-size: 1.5rem;
+            }
+        }
+        .phrase-1 {
+            color: $tertiary;
+        }
+    }
+    .learn {
+        @media screen and (max-width: 768px) {
+            text-align: center;
+        }
+    }
+}
+
+.features {
+    background-image: url("../styles/Maskgroup.png");
+    width: 100%;
+    max-width: 1500px;
+    min-height: 10vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .sub-heading {
+        padding-top: 4rem;
+    }
+    .card-body {
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            text-align: center;
+        }
+        .circle-1 {
+            min-height: 5rem;
+            min-width: 5rem;
+            border: 2px dashed #ff0000;
+            border-radius: 50%;
+            @media screen and (max-width: 991px) {
+                transform: scale(0.7, 0.7);
+            }
+        }
+    }
+}
+
+.facets-wrap {
+    .facets {
+        gap: 3rem;
+        .left-wing {
+            flex: 1;
+            .theme {
+                font-size: 2.5em;
+                color: $success;
+                @media screen and (max-width: 768px) {
+                    font-size: 1.5em;
+                }
+            }
+            .wording {
+                color: $primary;
+            }
+            .details {
+                .detail-1 {
+                    list-style: none;
+                    .fa-check {
+                        color: white;
+                        background-color: #038c33;
+                        border-radius: 50%;
+                        font-size: 0.75rem;
+                        padding: 0.3rem;
+                        margin-right: 0.5rem;
+                    }
+                }
+            }
+            .learn {
+                @media screen and (max-width: 768px) {
+                    text-align: center;
+                }
+            }
+        }
+        .right-wing {
+            flex: 1;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.popular {
+    background-color: #f9fcfe;
+    .inner {
+        .text-heading {
+            color: $success;
+        }
+        .text-paragraph {
+            color: $tertiary;
+        }
+    }
+    .cover {
+        .slick-arrow {
+            display: none !important;
+        }
+        .category {
+            color: $success;
+        }
+        a {
+            .enroll {
+                color: $success;
+            }
+             :hover {
+                background-color: $success;
+                color: white;
+            }
+        }
+    }
+}
+
+.about {
+    .caption {
+        color: $success;
+    }
+    .fact {
+        color: $gloom;
+    }
+    .photo {
+        width: 100%;
+        height: 100%;
+        img {
+            width: 60%;
+            height: 60%;
+        }
+        display: flex;
+        align-items: center;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .play {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 40%;
+            left: 45%;
+            height: 3rem;
+            width: 3rem;
+            background-color: white;
+            border-radius: 50%;
+            i {
+                color: #038c33;
+            }
+        }
+    }
+}
+
+.success {
+    background-image: url("./Rectangle\ 82\ .png");
+    background: #8fbf26;
+    margin-top: 3rem;
+    .coverlet {
+        min-height: 18rem;
+        p {
+            color: #d6e9f7;
+        }
+        .pictures {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            color: #003412;
+            .circle-2 {
+                border: 4px dashed #f2f2f2;
+                border-radius: 50%;
+                padding: 0.5rem;
+                box-sizing: border-box;
+                .singh {
+                    border-radius: 50%;
+                    width: 100%;
+                }
+            }
+            .circle-3 {
+                .timothy {
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+.staffs {
+    .staff-inner {
+        .compliments {
+            .workers {
+                @media screen and (max-width: 768px) {
+                    font-size: 1.5em;
+                }
+            }
+        }
+        .photographs {
+            &--main {
+                height: 498px;
+                &_card {
+                    height: inherit;
+                    background-size: cover;
+                    &-cover {
+                        height: inherit;
+                        background: linear-gradient( 180deg, rgba(3, 140, 51, 0) 22.57%, rgba(3, 140, 51, 0.596123) 83.65%, #038c33 100%);
+                        border-radius: 0px 0px 5px 5px;
+                        align-items: flex-end;
+                        .topics {
+                            @media screen and (max-width: 768px) {
+                                text-align: center;
+                            }
+                            .last-line {
+                                gap: 1rem;
+                                @media screen and (max-width: 768px) {
+                                    justify-content: center;
+                                }
+                            }
+                        }
+                    }
+                }
+                .first {
+                    background: url("./card/christina.png") no-repeat;
+                    background-size: cover;
+                }
+                .second {
+                    background: url("./card/trust-tru-katsande-SRdK0SQjasE-unsplash\ 1.png") no-repeat;
+                    background-size: cover;
+                }
+                .third {
+                    background: url("./card/Rectangle 89.png") no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+}
+
+.form {
+    .action {
+        width: 100%;
+        max-width: 768px;
+        margin: auto;
+        .contact {
+            font-size: 2.5rem;
+            color: #038c33;
+            font-weight: bolder;
+        }
+        .send {
+            @media screen and (max-width: 768px) {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: #003412;
+    width: 100%;
+    min-height: 100px;
+    .inner {
+        display: flex;
+        padding: 3rem;
+        @media screen and (max-width: 1100px) {
+            flex-direction: column;
+        }
+        .comp {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .comp-1 {
+                height: 5.1875rem;
+                width: 9rem;
+                background-color: #ffffff;
+                margin-top: 2rem;
+                display: flex;
+                justify-content: center;
+            }
+            .comp-2 {
+                padding-top: 1.25rem;
+                color: #ffffff;
+            }
+        }
+        .cover {
+            display: flex;
+            flex: 1;
+            justify-content: space-around;
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+            }
+            .portion-1 {
+                margin: 0;
+                padding: 0;
+                .us {
+                    color: #ffffff;
+                    font-size: 20px;
+                    font-weight: 500px;
+                }
+                hr {
+                    width: 40%;
+                    background: #add9bd;
+                }
+                .units {
+                    .unit {
+                        list-style: none;
+                        color: #ffffff;
+                    }
+                }
+            }
+            .portion-2 {
+                .category {
+                    color: #ffffff;
+                    font-size: 20px;
+                    font-weight: 500px;
+                }
+                hr {
+                    width: 30%;
+                    background: #ffffff;
+                }
+                .grades {
+                    .grade {
+                        list-style: none;
+                        color: #ffffff;
+                    }
+                }
+            }
+            .portion-3 {
+                .news {
+                    color: #ffffff;
+                }
+                hr {
+                    width: 20%;
+                    background: #ffffff;
+                }
+                .subscribe {
+                    color: #ffffff;
+                }
+                .wrapper {
+                    display: flex;
+                    .wrap-action {
+                        .action {
+                            color: #038c33;
+                            margin-top: 0.5rem;
+                            height: 40px;
+                            width: 238px;
+                            text-align: center;
+                            background-color: #ffffff;
+                            border-top-left-radius: 5px;
+                            border-bottom-left-radius: 5px;
+                        }
+                    }
+                    .pointer {
+                        height: 40px;
+                        background-color: #038c33;
+                        width: 40px;
+                        border-top-right-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        .symbol-1 {
+                            color: #ffffff;
+                            margin-top: 0.5rem;
+                            margin-left: 0.5rem;
+                        }
+                    }
+                }
+                .social-icons {
+                    margin-top: 1.5rem;
+                    .symbol {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
